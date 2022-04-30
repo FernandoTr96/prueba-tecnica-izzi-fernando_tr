@@ -1,0 +1,35 @@
+/* tailwind css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fontawesome */
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(190 24 93) #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+    height:8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(190 24 93);
+    border-radius: 10px;
+}
+
+input:disabled, select:disabled, textarea:disabled{
+    background-color: #F8F9F9;
+    cursor: not-allowed;
+}
